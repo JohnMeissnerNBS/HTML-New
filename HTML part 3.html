@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Part 3</title>
+</head>
+<body>
+
+    <!-- Forms -->
+
+    <!-- forms can have a method and an action!-->
+
+    <!-- method: how to send information (ot the server) -->
+
+    <!-- action: where to send the information -->
+
+    <!-- GET method sends for input intot he URL bar -->
+    <!-- name: value pair -->
+    <!-- used like a hyperlink -->
+    <form method="get" action="./search.html"
+        <h4>GET Form</h4>
+        <!-- input for data -->
+        <input type="text" name="query"/>
+        <!-- a button to send the form -->
+        <button type="submit">submit</button>
+</form>
+
+<!-- POST method sends data to action URL -->
+<form method="post" action="index.html">
+    <h4>Your basic info</h4>
+    <!-- an input for data-->
+    <div><input type="text" name="Name"/></div>
+    <div><input type="text" name="Email"/></div>
+    <div><input type="text" name="Password"/></div>
+    <div>Gender:</div>
+    <div><input type="checkbox" name="Male"/></div>
+    <div><input type="checkbox" name="Male"/></div>
+    <!-- a button to send the form -->
+    <button type="Sign Up!">submit</button>
+</form>
+
+<!-- you dont need an action or method to make a form -->
+<!-- there are also lots of different input types!-->
+
+<form>
+    <h4>More Inputs!</h4>
+
+    <!-- checkbox -->
+    <input type="checkbox" name="checkboxone" value="1"/>1
+    <input type="checkbox" name="checkboxtwo" value="2"/>2
+
+    <!-- radio buttons -->
+    <!-- they can be linked togehter! -->
+    <fieldset>
+        <legend>question 1:</legend>
+        <input type="radio" name="multiplechoice" value="a"/>a
+        <input type="radio" name="multiplechoice" value="b"/>b
+        <input type="radio" name="multiplechoice" value="c"/>c
+    </fieldset>
+
+    <!-- date selection -->
+    <input type="date" name="selectme"/>
+
+    <!-- color -->
+    <input type="color" name="colorpicker"/>
+
+
+</form>
+    
+</body>
+</html>
