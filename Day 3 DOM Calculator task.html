@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .display {
+            display: block;
+            height: 80px;
+            width: 300px;
+            margin: 8px;
+            background-color: rgba(54, 54, 68, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     
+
+    <button id="btnadd">+</button>
+    <button id="btnsub">-</button>
+    <button id="btndiv">/</button>
+    <button id="btnmul">*</button>
+    <button id="btnaddval">Add value to history</button>
+    <button id="btnclearhist">Clear history</button>
+    <button id="btnClearval">Clear Values</button>
+    <button id="btn0">0</button>
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <button id="btn3">3</button>
+    <button id="btn4">4</button>
+    <button id="btn5">5</button>
+
+    <p id="display"></p>
+
+    <script>
+    let btnadd = document.querySelector("#btnadd");
+    let btnsub = document.queryselector("#btnsub");
+    let btndiv = document.queryselector("#btndiv");
+    let btnmul = document.queryselector("#btnmul");
+    let btnaddval = document.queryselector("#btnaddval");
+    let btnclearhist = document.queryselector("#btnclearhist");
+    let btnClearval = document.queryselector("#btnClearval");
+    let btn0 = document.queryselector("btn0");
+    let btn1 = document.queryselector("#btn1");
+    let btn2 = document.queryselector("#btn2");
+    let btn3 = document.queryselector("#btn3");
+    let btn4 = document.queryselector("#btn4");
+    let btn5 = document.queryselector("#btn5");
+
+    function add()
+    {
+        document.getElementById("display").innerHTML=add();
+    }
+    
+    document.getElementById(btnadd).addEventListener("click",add())
+      
+
+
+
+
+
+    btnadd.addEventListener("click", appendData);
+    btnsub.addEventListener("click", appendData);
+    btndiv.addEventListener("click", appendData);
+    btnmul.addEventListener("click", appendData);
+    btnaddval.addEventListener("click", appendData);
+    btnclearhist.addEventListener("click", appendData);
+    btnClearval.addEventListener("click", appendData);
+    btn0.addEventListener("click",appendData);
+    btn1.addEventListener("click", appendData);
+    btn2.addEventListener("click", appendData);
+    btn3.addEventListener("click", appendData);
+    btn4.addEventListener("click", appendData);
+    btn5.addEventListener("click", appendData);
+    
+
+
+    </script>
+</body>
+</html>
