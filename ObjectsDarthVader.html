@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+let darthVader = {
+
+allegiance : "empire",
+weapon : "lightsabre",
+sith : "true"
+};
+
+
+console.log(`Darth Vader's allegiance is to the ${darthVader.allegiance}`);
+console.log(`Darth Vader's weapon of choice is a ${darthVader.weapon}`);
+console.log(`Darth Vader is a sith? ${darthVader.sith}`);
+console.log(`Darth Vader is a Jedi? ${darthVader.sith ? "false" : "true"}`);
+
+console.log(Object.keys(darthVader).length);
+
+
+// Exercise 4
+//a
+darthVader.children = 2;
+//b
+darthvader.childNames = ["Luke", "Leia"];
+
+console.log(darthVader);
+console.log(`Darth Vader's first child is called ${darthVader.childNames[0]}`)
+
+//Exercise 5
+
+for (let key in darthVader){
+
+console.log(`darthVader's ${key} is ${darthVader[key]}`);
+
+//Exercise 6
+
+darthVader.allegiance = "The light side",
+console.log(darthvader);
+darthVader.sith = false;
+delete darthVader.children;
+console.log(darthVader);
+
+let {allegiance, weapon, sith, childNames} = darthVader;
+console.log{allegiance};
+console.log{weapon};
+console.log{sith};
+console.log{childName};
+
+//How to clear object
+
+darthVader = {};
+console.log(darthVader);
+
+}
+
+
+    </script>
+    
+</body>
+</html>

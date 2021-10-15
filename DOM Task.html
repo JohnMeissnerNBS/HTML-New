@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L7 Debugging Setting Break Point Demo 4</title>
+</head>
+
+<body>
+
+    <div id="placeholder"></div>
+
+    <script>
+
+        let colours = ['red', 'green', 'blue', 'orange', 'lime', 'olive', 'black', 'yellow'];
+
+        console.log(colours);
+
+
+
+        function buildP(placeholder, num) {
+
+            let i = 0;
+
+            do {
+
+                let p = document.createElement("p");
+
+                let text = document.createTextNode(`Have you tried turning it off and back on again?`);
+
+                p.appendChild(text);
+
+                p.style.color = colours[parseInt(Math.random() * colours.length)];
+
+                placeholder.appendChild(p);
+
+                i++;
+
+            } while (i < num)
+
+        }
+
+
+
+        buildP(document.querySelector("#placeholder"), 10);
+
+    </script>
+
+</body>
+
+</html>
