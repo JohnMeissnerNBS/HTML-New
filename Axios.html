@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+    <script>src = "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"</script>
+</head>
+
+<body>
+
+    <script>
+        //Demo 1-Sending GET Requests
+
+        axios.get("https://jsonplaceholder.typicode.com/posts")
+
+            .then((resp) => {
+
+                console.log(resp.data);
+
+            }).catch((err) => {
+
+                console.log(err);
+
+            })
+
+        //Demo 1A- rewrite the same code this using async/await keywords
+
+
+
+        const sendGetRequest = async () => {
+
+            try {
+
+                const resp = await axios.get("https://jsonplaceholder.typicode.com/posts");
+
+                console.log(resp.data);
+
+            } catch (err) {
+
+                console.error(err);
+
+            }
+
+        }
+
+        sendGetRequest();
+
+        const updatedPost = {
+
+            id: 1,
+
+            userId: 1,
+
+            title: 'A new title',
+
+            body: 'Update this post'
+
+        };
+
+
+
+        const sendPutRequest = async () => {
+
+            try {
+
+                const resp = await axios.put('https://jsonplaceholder.typicode.com/posts/1', updatedPost);
+
+                console.log(resp.data);
+
+            } catch (err) {
+
+                // Handle Error Here
+
+                console.error(err);
+
+            }
+
+        };
+
+        //Demo 4: Sending DELETE Requests
+
+        //You can send an HTTP DELETE request using the axios.delete() method
+
+        //to remove data from a RESTful API.
+
+        //{} -  means no data was returned, which is fine when a resource is removed.
+
+        //However, as no error was thrown by Axios, we're pretty sure that it was processed correctly.
+
+        sendPutRequest();
+
+
+    </script>
+
+</body>
+
+</html>
